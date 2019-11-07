@@ -10,16 +10,30 @@ public class Ejercicio_3 {
     int llegit, notesAcumulades;
     notesAcumulades = 0;
     int numNotes = 4;
+    boolean salir = false;
 
+    
     for (int i=0; i<numNotes; i++){
        System.out.print("Introdueix la nota (entre 0 i 10): ");
        llegit = lector.nextInt();
        lector.nextLine();
        if((llegit >= 0)&&(llegit <= 10)){
           notesAcumulades += llegit; 
+       }else
+       {
+           i = numNotes;
+           salir = true;
        }
     }
-    System.out.println("La nota mitjana és " + notesAcumulades/numNotes);
+    
+    
+    if(!salir)
+    {
+        System.out.println("La nota mitjana és " + notesAcumulades/numNotes);
+    }else
+    {
+        System.out.println("Error, valor incorrecto.");
+    }
  }
     
 }
