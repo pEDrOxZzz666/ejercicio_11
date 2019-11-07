@@ -20,15 +20,19 @@ public class Ejercicio_2 {
         
         
         for (int i=0; i<NUM_INTENTOS;){
-            System.out.print("Introdueix un valor enter entre " + RANGO_MIN + " i " + RANGO_MAX + ": ");
+            System.out.print("Introdueix 5 valors enters i parells entre " + 
+                             RANGO_MIN + " i " + RANGO_MAX + ": ");
             llegit = lector.nextInt();
             lector.nextLine();
             if((llegit >= RANGO_MIN)&&(llegit <= RANGO_MAX)&&(llegit%2==0)){
                valorUsuari += llegit;                   
                i++; //Sólo incrementamos el valor de i si cumple rango y es par
-            }      
+            }else
+            {
+                System.out.println("Valor impar o fuera de rango. Vuelva a intentarlo.");
+            }
         }
-        System.out.println("Dada correcta. Has escrit " + valorUsuari);
+        System.out.println("La suma dels " + NUM_INTENTOS + " valors parells es: " + valorUsuari);
     }
     
 }
