@@ -31,7 +31,7 @@ public class Ejercicio_2 {
             {
                 System.out.println("Valor impar o fuera de rango. Vuelva a intentarlo.");
             }
-        }
+        }        
         System.out.println("La suma dels " + NUM_INTENTOS + " valors parells es: " + valorUsuari);
     }
     
