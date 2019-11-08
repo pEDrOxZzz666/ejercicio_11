@@ -34,9 +34,7 @@ public class Ejercicio_3 {
                 i = NUM_NOTES;
                 salir = true;
             }
-        }
-
-        
+        }        
 
         //En función del valor variable boolean "salir" imprimimos un mensaje
         if(!salir)//si el bucle ha finalizado correctamente...
